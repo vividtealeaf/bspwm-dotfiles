@@ -18,3 +18,4 @@ Please change the monitor's in bspwm/bspwmrc to the ones listed with the command
 "
 
 # DO NOT MAKE THESE PUBLIC IT'S A BAD IDEA TBH
+# when tested, add pictures and upload to new public repo
