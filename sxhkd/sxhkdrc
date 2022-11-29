@@ -67,6 +67,6 @@ alt + f
 	
 #lock screen
 alt + ctrl + l
-	/home/user/.config/rofi/powermenu/type-6/powermenu.sh
+	~/.config/rofi/powermenu/type-6/powermenu.sh
 
 

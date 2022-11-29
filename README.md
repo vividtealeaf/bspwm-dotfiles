@@ -10,6 +10,11 @@ polybar,
 rofi,
 sxhkd,
 picom (but disabled due to memory leak),
-alacritty
+alacritty,
+JetBrains Mono Nerd Font 10
+
+
+Please change the monitor's in bspwm/bspwmrc to the ones listed with the command "xrandr | grep " connected " | awk '{ print$1 }'
+"
 
 # DO NOT MAKE THESE PUBLIC IT'S A BAD IDEA TBH
