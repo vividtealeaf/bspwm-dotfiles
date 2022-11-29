@@ -11,3 +11,4 @@ rofi
 sxhkd
 picom (but disabled due to memory leak)
 
+# DO NOT MAKE THESE PUBLIC IT'S A BAD IDEA TBH
