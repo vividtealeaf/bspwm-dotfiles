@@ -1,0 +1,72 @@
+# make sxhkd reload its configuration files
+alt + Escape
+	pkill -USR1 -x sxhkd
+ 
+# quit or restart bspwm
+alt + shift + {r}
+	bspc {wm -r}
+ 
+# create a new terminal window or swap the current one to the biggest one in the screen 
+alt + t
+	exec alacritty
+
+#switch a window between tiling and floating modes
+alt + shift + i
+	bspc node -t ~floating
+
+# close or kill a window
+alt + {_,shift + }q
+	bspc node -{c,k}
+ 
+# expand a window by moving one of its side outward
+super + alt + {h,j,k,l}
+	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+ 
+# focus or send a window to the given desktop
+alt + {_,shift + }{1-9,0}
+	bspc {desktop -f,node -d} '^{1-9,10}'
+
+#open application launcher through rofi
+alt + {d}
+	rofi -show drun
+
+#swap positions of windows according to direction
+alt + {_,shift + }{Left,Down,Up,Right}
+	bspc node --{focus,swap} {west,south,north,east}
+
+#swap positions of windows according to direction
+alt + {_,shift + }{h,j,k,l}
+	bspc node --{focus,swap} {west,south,north,east}
+
+#expand a window by moving one of its sides outwards
+super + {Left,Down,Up,Right}
+    bspc node -z {left -80 0,bottom 0 80,top 0 -80,right 80 0}
+
+#contract a window by moving one of its sides inwards
+super + shift + {Left,Down.Up,Right}
+    bspc node -z {right -80 0,top ,80,bottom 0 -80,left 80 0}
+
+alt + shift + f 
+  bspc node -t '~fullscreen'
+
+#reset resize layout to default
+alt + r
+	bspc node @/ -E
+	
+#open waterfox
+alt + w
+	firefox
+	
+#open gedit
+alt + e
+	gedit
+	
+#open pcmanfm
+alt + f
+	pcmanfm
+	
+#lock screen
+alt + ctrl + l
+	/home/user/.config/rofi/powermenu/type-6/powermenu.sh
+
+

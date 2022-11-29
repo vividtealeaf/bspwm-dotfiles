@@ -1,0 +1,51 @@
+#! /bin/sh
+
+
+#Pkill polybar &
+pgrep -x sxhkd > /dev/null || sxhkd &
+
+bspc monitor DisplayPort-2 -d 1 2 3 4 5 6 7 8
+bspc monitor HDMI-A-0 -d 9 0
+
+bspc config border_width         5
+bspc config window_gap           10
+bspc config top_padding		 0
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+
+
+#color of the border of an unfocused window
+bspc config normal_border_color "#303440"
+#color of the border of a focused window of a unfocused monitor
+bspc config active_border_color "#302943"
+#color of the border of a focused window of a focused monitor
+bspc config focused_border_color "#da5c89"
+#D2B1CB
+
+
+
+
+
+
+
+bspc config focus_follows_pointer true
+
+bspc rule -a Gimp desktop='^8' state=floating follow=on
+bspc rule -a Chromium desktop='^2'
+bspc rule -a mplayer2 state=floating
+bspc rule -a Kupfer.py focus=on
+bspc rule -a Screenkey manage=off
+
+
+#window focus follows mouse
+bspc config pointer_follows_focus true
+
+#move floating windows with left click and resize all windows with rightclick
+bspc config pointer_modifier mod1
+bspc config pointer_action1 move
+bspc config pointer_action2 resize_corner
+
+#exec picom &
+exec polybar &
+exec feh --bg-scale /home/user/Pictures/leftwallpaper.png /home/user/Pictures/rightwallpaper.png
