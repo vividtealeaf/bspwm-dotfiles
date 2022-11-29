@@ -15,14 +15,24 @@ feh
 JetBrains Mono Nerd Font  
 
 ## Installation
-Please change the bspc monitor's in bspwm/bspwmrc to the ones listed with the command: 
 
+### 1. Clone  
+```
+git clone https://github.com/vividtealeaf/bspwm-dotfiles.git  
+```  
+
+### 2. Change monitor settings  
+change the bspc monitor's in ```bspwm-dotfiles/bspwm/bspwmrc``` to the ones listed with the command:  
 ```
 xrandr | grep " connected " | awk '{ print$1 }'  
 ```
-If you do not need two monitors, make sure to delete the second monitor line
+If you do not need two monitors, make sure to delete the second monitor line  
 
-Copy all files inside the bspwm-dotfiles folder into the ~/.config folder and refresh bspwm  
+### 3. Copy files
+Run this command to install the theme:
+```
+cp -r bspwm-dotfiles/* ~/.config/
+```
 
 ## Keybindings
 | keybinding                         | command                                |
@@ -43,6 +53,7 @@ Copy all files inside the bspwm-dotfiles folder into the ~/.config folder and re
 | alt \+ shift \+ h,j,k,l            | swap window positions                  |
 | win \+ shift \+ h,j,k,l            | contract a window by moving it's sides |
 | win \+ up,down,left,right          | expand a window by moving it's sides   |
+
 | win \+ shift \+ up,down,left,right | contract a window by moving it's sides |
 | alt \+ shift \+ f                  | make focused window fullscreen         |
 | alt \+ r                           | reset resize layout to default         |
@@ -50,7 +61,6 @@ Copy all files inside the bspwm-dotfiles folder into the ~/.config folder and re
 | alt + e                            | open gedit                             |
 | alt + f                            | open pcmanfm                           |
 | alt + ctrl + l                     | open powermenu                         |
-
 
 ## Credit
 
