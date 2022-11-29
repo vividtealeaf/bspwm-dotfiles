@@ -55,7 +55,6 @@ Then refresh the theme with ```bspc wm -r```
 | alt \+ shift \+ h,j,k,l            | swap window positions                  |
 | win \+ shift \+ h,j,k,l            | contract a window by moving it's sides |
 | win \+ up,down,left,right          | expand a window by moving it's sides   |
-
 | win \+ shift \+ up,down,left,right | contract a window by moving it's sides |
 | alt \+ shift \+ f                  | make focused window fullscreen         |
 | alt \+ r                           | reset resize layout to default         |
