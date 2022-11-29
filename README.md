@@ -34,6 +34,8 @@ Run this command to install the theme:
 cp -r bspwm-dotfiles/* ~/.config/
 ```
 
+Then refresh the theme with ```bspc wm -r```
+
 ## Keybindings
 | keybinding                         | command                                |
 |------------------------------------|----------------------------------------|
