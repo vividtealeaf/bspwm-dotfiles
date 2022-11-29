@@ -40,4 +40,4 @@ bspc config pointer_action2 resize_corner
 #picom commented out due to a memory leak on my end.Feel free to try it though.
 #exec picom &
 exec polybar &
-exec feh --bg-scale %wallpaper-directory% %wallpaper-directory-for-second-monitor%
+exec feh --bg-scale ~/.config/wallpaper/left-wallpaper.png ~/.config/wallpaper/right-wallpaper.png
