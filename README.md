@@ -25,19 +25,18 @@ If you do not need two monitors, make sure to delete the second monitor line
 Copy all files inside the bspwm-dotfiles folder into the ~/.config folder and refresh bspwm  
 
 ## Keybindings
-
 | keybinding                         | command                                |
 |------------------------------------|----------------------------------------|
-| alt\ +esc                           | reload sxhkd                           |
-| alt\ +shift\ +r                      | reload bspwm                           |
-| alt\ +t                             | spawn alacritty                        |
-| alt\ +shift\ +i                      | switch between tiling and floating     |
-| alt\ +q                             | close window                           |
-| alt\ +shift\ +q                      | kill window                            |
-| win\ +alt\ +\{h,j,k,l\}              | expand a window by moving it's sides   |
-| alt\+1\-9,0                        | move to numbered window                |
-| alt\ +shift\ +1\-9,0                 | move focused window to numbered window |
-| alt\ +d                             | show launcher                          |
+| alt \+ esc                         | reload sxhkd                           |
+| alt \+ shift \+ r                  | reload bspwm                           |
+| alt \+ t                           | spawn alacritty                        |
+| alt \+ shift \+ i                  | switch between tiling and floating     |
+| alt \+ q                           | close window                           |
+| alt \+ shift \+ q                  | kill window                            |
+| win \+ alt \+ \{h,j,k,l\}          | expand a window by moving it's sides   |
+| alt \+ 1\-9,0                      | move to numbered window                |
+| alt \+ shift \+ 1\-9,0             | move focused window to numbered window |
+| alt \+ d                           | show launcher                          |
 | alt \+ left,down,up,right          | move window focus                      |
 | alt \+ shift \+ left,down,up,right | swap window positions                  |
 | alt \+ h,j,k,l                     | move window focus                      |
@@ -45,13 +44,12 @@ Copy all files inside the bspwm-dotfiles folder into the ~/.config folder and re
 | win \+ shift \+ h,j,k,l            | contract a window by moving it's sides |
 | win \+ up,down,left,right          | expand a window by moving it's sides   |
 | win \+ shift \+ up,down,left,right | contract a window by moving it's sides |
-| alt\+ shift\ +f                    | make focused window fullscreen         |
+| alt \+ shift \+ f                  | make focused window fullscreen         |
 | alt \+ r                           | reset resize layout to default         |
-| alt + w   			     | open firefox   			      |
-| alt + e    		             | open gedit     			      |
-| alt + f   			     | open pcmanfm   			      |
-| alt+ctrl+l 			     | open powermenu 			      |
-
+| alt + w                            | open firefox                           |
+| alt + e                            | open gedit                             |
+| alt + f                            | open pcmanfm                           |
+| alt + ctrl + l                     | open powermenu                         |
 
 
 ## Credit
